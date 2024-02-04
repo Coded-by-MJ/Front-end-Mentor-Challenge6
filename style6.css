@@ -1,0 +1,196 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    background-color:  hsl(210, 46%, 95%);
+    padding: 2rem 1rem;
+    row-gap: 2rem;
+}
+
+
+.container > *{
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.profile{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.image > img{
+    object-fit: cover;
+    object-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+h2{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+span{
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.quote{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    white-space: wrap;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.review{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    white-space: wrap;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.item1{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0;
+
+}
+
+.item1  .image{
+    border:  2px solid   hsla(0, 0%, 100%, 0.5);
+}
+
+.item1  h2, .item1 .quote, .item2 h2, .item2 .quote, .item4 h2, .item4 .quote{
+    color: hsl(0, 0%, 100%);
+
+}
+
+.item1 span, .item2 span, .item4 span{
+    color: hsla(0, 0%, 100%, 50%);
+
+}
+
+.item1 .review, .item2 .review, .item4 .review{
+    color: hsla(0, 0%, 100%, 70%);
+
+}
+
+
+.item2{
+    background-color: hsl(217, 19%, 35%);
+}
+
+
+
+.item3, .item5{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.item3 h2, .item5 h2, .item3 .quote, .item5 .quote{
+    color: hsl(217, 19%, 35%);
+}
+
+.item3 span, .item5 span{
+    color: hsla(217, 19%, 35%, 50%);
+}
+
+.item3 .review, .item5 .review{
+    color: hsla(217, 19%, 35%, 70%);
+}
+
+.item4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+
+.item4 .image{
+    border:  2px solid hsl(263, 55%, 52%);
+}
+
+
+
+
+.attribution{
+    text-align: center;
+}
+
+.attribution a{
+    color:  hsl(263, 55%, 52%);
+}
+/* Desktop Design */
+
+
+@media screen and (min-width: 1400px) {
+
+        .container{
+            grid-template-columns:  repeat(6, auto);
+            grid-template-rows: auto auto;
+            gap: 2rem;
+            padding: 3rem 3rem;
+        }
+    
+
+        .item1{
+            grid-column: 1 / span 4;
+        }
+
+
+        .item5{
+            grid-column: 6;
+            grid-row: 1 / span 2;
+        }
+
+        .item4{
+            grid-column: 2 / span 4;
+        }
+
+
+        .review{
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.4rem;
+        }
+
+        .item5 .review{
+            margin-top: 1.5rem;
+        }
+
+
+        .attribution{
+            grid-column: 1 / span 6;
+        }
+}
