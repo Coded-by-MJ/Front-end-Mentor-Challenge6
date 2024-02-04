@@ -11,8 +11,8 @@ This is my solution to the [Testimonials grid section challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Click to view Solution](https://www.frontendmentor.io/solutions/responsive-and-interactive-notification-page-using-html-css-and-js-PkIHBIWej)
-- Live Site URL: [Click to view Live Site](https://coded-by-mj.github.io/Front-end-Mentor-Challenge5/)
+- Solution URL: [Click to view Solution](https://www.frontendmentor.io/solutions/responsive-testimonial-grid-section-HYz8Tm6Of8)
+- Live Site URL: [Click to view Live Site](https://coded-by-mj.github.io/Front-end-Mentor-Challenge6/)
 
 
 
